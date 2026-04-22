@@ -55,8 +55,8 @@ Raw Data → Feature Engineering → DCB-VAE (Sampling) → Multimodal Transform
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/hardy-jin/DCB-VAE-MMT.git
+cd DCB-VAE-MMT
 
 pip install -r requirements.txt
 ```
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 
 GPU recommended:
 
-* NVIDIA GPU (e.g., RTX 3090)
+* NVIDIA GPU (e.g., 4 * NVIDIA A6000 GPUs)
 
 ---
 
@@ -144,8 +144,8 @@ If you find this work useful, please cite:
 
 ```bibtex
 @article{han2026dcbvae,
-  title={Dynamic Conditional Balanced VAE with Multimodal Transformer for Imbalanced Traffic Crash Prediction},
-  author={Han, Jintong and others},
+  title={Learning Informative Negative Samples for Imbalanced Crash Prediction via DCB-VAE and Multimodal Transformer},
+  author={Han, Jintong and Yang, Jidong},
   journal={Engineering Applications of Artificial Intelligence},
   year={2026}
 }
@@ -159,8 +159,4 @@ This work is supported by research in transportation safety and intelligent syst
 
 ---
 
-## 📬 Contact
-
-Jintong Han
-University of Georgia
-Email: [your_email@uga.edu](mailto:your_email@uga.edu)
+Code will be released soon!
