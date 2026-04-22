@@ -12,7 +12,7 @@ To address these challenges, we propose a two-stage framework:
 * **DCB-VAE**: A latent-space representation learning model for adaptive negative sampling
 * **Multimodal Transformer (MMT)**: A transformer-based architecture that models cross-modal interactions using semantic tokens
 
----
+
 
 ## Key Contributions
 
@@ -21,7 +21,7 @@ To address these challenges, we propose a two-stage framework:
 *  Multimodal transformer with semantic token design
 *  Improved performance on highly imbalanced crash datasets
 
----
+
 
 ##  Framework
 
@@ -29,7 +29,7 @@ To address these challenges, we propose a two-stage framework:
 Raw Data → Feature Engineering → DCB-VAE (Sampling) → Multimodal Transformer → Prediction
 ```
 
----
+
 
 ## Repository Structure
 
@@ -50,7 +50,7 @@ Raw Data → Feature Engineering → DCB-VAE (Sampling) → Multimodal Transform
 └── README.md
 ```
 
----
+
 
 ## Installation
 
@@ -61,7 +61,7 @@ cd DCB-VAE-MMT
 pip install -r requirements.txt
 ```
 
----
+
 
 ## Environment
 
@@ -75,7 +75,7 @@ GPU recommended:
 
 * NVIDIA GPU (e.g., 4 * NVIDIA A6000 GPUs)
 
----
+
 
 ## Training
 
@@ -97,13 +97,13 @@ python utils/generate_samples.py
 python training/train_transformer.py
 ```
 
----
+
 
 ## Hyperparameters
 
 All parameters were tuned using **grid search on validation set**.
 
----
+
 
 ## Evaluation Metrics
 
@@ -112,7 +112,7 @@ All parameters were tuned using **grid search on validation set**.
 * F1-score
 * ROC-AUC
 
----
+
 
 ## Reproducibility
 
@@ -120,13 +120,13 @@ All parameters were tuned using **grid search on validation set**.
 * All experiments use the same train/validation/test split
 * Hyperparameters are reported in the paper (Table 4)
 
----
+
 
 ## Code Availability Statement
 
 This repository is provided to ensure **reproducibility and transparency** of the results reported in the paper.
 
----
+
 
 ## Citation
 
@@ -141,12 +141,12 @@ If you find this work useful, please cite:
 }
 ```
 
----
+
 
 ## Acknowledgements
 
 This work is supported by research in transportation safety and intelligent systems.
 
----
+
 
 Code will be released soon!
