@@ -1,6 +1,6 @@
-# 🚗 DCB-VAE + Multimodal Transformer for Imbalanced Traffic Crash Prediction
+# DCB-VAE + Multimodal Transformer for Imbalanced Traffic Crash Prediction
 
-## 📌 Overview
+## Overview
 
 This repository provides the official implementation of our paper:
 
@@ -14,16 +14,16 @@ To address these challenges, we propose a two-stage framework:
 
 ---
 
-## 🧠 Key Contributions
+## Key Contributions
 
-* ✅ Representation-driven negative sampling via latent space learning
-* ✅ KNN-based hard negative mining (near-collision scenarios)
-* ✅ Multimodal transformer with semantic token design
-* ✅ Improved performance on highly imbalanced crash datasets
+*  Representation-driven negative sampling via latent space learning
+*  KNN-based hard negative mining (near-collision scenarios)
+*  Multimodal transformer with semantic token design
+*  Improved performance on highly imbalanced crash datasets
 
 ---
 
-## 🏗️ Framework
+##  Framework
 
 ```
 Raw Data → Feature Engineering → DCB-VAE (Sampling) → Multimodal Transformer → Prediction
@@ -31,7 +31,7 @@ Raw Data → Feature Engineering → DCB-VAE (Sampling) → Multimodal Transform
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 ├── data/                  # Processed dataset (or instructions to generate)
@@ -52,7 +52,7 @@ Raw Data → Feature Engineering → DCB-VAE (Sampling) → Multimodal Transform
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/hardy-jin/DCB-VAE-MMT.git
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Environment
+## Environment
 
 * Python 3.9+
 * PyTorch
@@ -77,7 +77,7 @@ GPU recommended:
 
 ---
 
-## 🚀 Training
+## Training
 
 ### Step 1: Train DCB-VAE
 
@@ -99,23 +99,13 @@ python training/train_transformer.py
 
 ---
 
-## 📊 Hyperparameters
-
-Key parameters used in the paper:
-
-| Parameter              | Value |
-| ---------------------- | ----- |
-| k (KNN)                | 13    |
-| Latent dimension       | 8     |
-| γ (contrastive weight) | 0.3   |
-| α (attraction weight)  | 0.1   |
-| KL warmup T            | 20    |
+## Hyperparameters
 
 All parameters were tuned using **grid search on validation set**.
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 * Precision
 * Recall
@@ -124,7 +114,7 @@ All parameters were tuned using **grid search on validation set**.
 
 ---
 
-## 🔁 Reproducibility
+## Reproducibility
 
 * Random seed fixed: `42`
 * All experiments use the same train/validation/test split
@@ -132,13 +122,13 @@ All parameters were tuned using **grid search on validation set**.
 
 ---
 
-## 📎 Code Availability Statement
+## Code Availability Statement
 
 This repository is provided to ensure **reproducibility and transparency** of the results reported in the paper.
 
 ---
 
-## 📖 Citation
+## Citation
 
 If you find this work useful, please cite:
 
@@ -153,7 +143,7 @@ If you find this work useful, please cite:
 
 ---
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
 This work is supported by research in transportation safety and intelligent systems.
 
